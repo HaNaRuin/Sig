@@ -12,13 +12,12 @@ int main(void)
         for(int j=b; j>1; j--)
         {
             a*=r;
+            a%=10;
         }
-        if(a%10 == 0)
+        if(a == 0)
             printf("10\n");
-        else{
-            printf("%d\n", a%10);
+        else
             printf("%d\n", a);
-        }
     }
     
 return 0;
